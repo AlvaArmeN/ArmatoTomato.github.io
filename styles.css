@@ -1,0 +1,204 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 63px;
+    background-image: src("Fuzed\images\fuzed-esport-header.psdm.jpg");
+    background: linear-gradient(90deg, rgba(111, 19, 107, 1) 15%, #d424cd 100%);
+    border-style: none none solid none;
+    border-width: 2px;
+    border-radius: 4px;
+    place-items: center;
+}
+
+#headerLogo{
+    width: 50px;
+    height: 50px;
+}
+
+body{ 
+    color: white;
+    font-family: fantasy;
+    background-color: black;
+    margin: 0px;
+    offset: 0px;
+    padding: 0px;
+}
+
+.bodyContainer{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 100%;
+}
+
+#openhrs{
+    height: 100px;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.frame
+{
+    background: slateblue;
+    background: linear-gradient(90deg, rgba(111, 19, 107, 1) 15%, #d424cd 100%);
+    border-style: solid;
+    border-width: 2px;
+    border-radius:4px;
+    width: 100%;
+}
+
+#info
+{
+    width: 100%;
+}
+
+
+#onGGallery{
+    display: grid;
+    row-gap: 20px;
+    grid-row: repeat(3, 30vh);
+    grid-column: 100vw;
+}
+
+.elementContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+}
+
+.item1{
+    height: 80px;
+    width: 100px;
+}
+.images{
+    width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.item2{
+    background-color: white;
+    color: #6F136B;
+    height: 80px;
+    width: 200px;
+}
+h3{
+    text-align: center;
+    font-size: 15px;
+}
+
+p{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.onGGalleryItem{
+    place-self: center;
+    width:100%;
+
+}
+
+#element1{
+    grid-row: 1;
+}
+#element2{
+    grid-row: 2;
+}
+#element3{
+    grid-row: 3;
+}
+
+.item1, .item2{
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius:4px;
+    border-color: #d424cd;
+}
+
+.hamburger{
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    background: white;
+    cursor: pointer;
+    
+}
+
+.closeIcon{
+    display: none;
+}
+
+.menu{
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: -80px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background: 6F136B;
+    background: linear-gradient(90deg, rgba(111, 19, 107, 1) 15%, #d424cd 85%);
+    color: white;
+    border: rgb(255, 255, 255) solid 1px;
+    border-width: 2px;
+    border-radius: 4px;
+    list-style: none;
+    padding-top: 4rem;
+    font-size: 50px;
+    
+}
+
+.showMenu{
+    transform: translateY(0);
+}
+
+a, a:hover, a:active, a:visited {
+     color: white;
+    font-family: fantasy;
+}
+
+#contactAndInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.button{
+    width: 100%;
+    height: 100%;
+}
+
+#infoItem, #contactItem{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
+
+@media (min-width: 640px){
+    .frame{
+        width: 50%;
+    }
+
+    #info
+    {
+        width: 100%;
+    }
+    .menu{
+        font-size: 80px;
+    }
+
+} 
